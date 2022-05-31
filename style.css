@@ -1,38 +1,85 @@
-.pie {
-    display: flex;    
-    text-align: center;
-    height: 70px;
-}                    
-
-ul.Menu{
-    margin:0;
-    padding:0;
-    display: flex;
-    text-align: center;
-    grid-template-columns:auto,auto;
-       
-    }
-
-
-    ul.Menu li
-    {
-        display:grid;
-        float:inline-end;
-        padding:0 10px;
-        justify-self:center;
-        align-self:center;
-        font-family: 'Permanent Marker', cursive;
-        color: #000;
-       }
- 
-
-
-h1{
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.Pagina
-{
-  display: grid;
-  grid-template-columns:minmax(200px,600px),(200px,600px);
+body {
+    background-color: #ffffff;
+    font-family: 'Spartan', sans-serif;
+}
+
+nav {
+    background-color: #0b70296d;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    float: left;
+    display: flex;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav img {
+    padding: 1rem 2rem;
+    float: left;
+    align-self: center;
+    width: 150px;
+    height: auto;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0rem 2rem;
+    line-height: 5rem;
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    border: 1px solid #0b70296d;
+    background-color: #ffffff;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li  {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 1rem 2rem;
+    line-height: unset;
+    white-space: nowrap;
+}
+
+nav ul li ul li a:hover {
+    background-color: #d4160581;
+}
+
+div h1 {
+    text-align: center;
+    font-size: 3rem;;
+    padding: 1rem;
+}
+
+div p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+div img {
+    width: AUTO;
+    height: auto;
 }
